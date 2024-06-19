@@ -6,12 +6,18 @@
 
 <div align="center">
 
-[Demo]() • [Preview](#Preview) • [Installation](#Installation) • [Tech stack](#Technologies) 
+[Demo]() • [Preview](#Preview) • [Features](#Features) • [Installation](#Installation) • [Tech stack](#Technologies) 
 
 </div>
 
 
 # Preview
+
+# Features
+- Layering functionality
+- Undo & Redo
+- Real-time collaboration
+- Auth, organizations and invites
 
 # Installation
 
@@ -46,7 +52,11 @@ pnpm run dev
 ```
 
 # Technologies
-
+- Next14
+- React
+- Shadcn UI
+- Clerk
+- Convex
 
 
 Each package/app is fully written in [TypeScript](https://www.typescriptlang.org/), ensuring type safety and code quality.
