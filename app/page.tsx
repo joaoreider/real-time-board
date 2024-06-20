@@ -1,7 +1,9 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div>App</div>
+    <div className="flex flex-col gap-y-4">
+      <div>Authentiated users only</div>
+
+    </div>
+
   );
 }
