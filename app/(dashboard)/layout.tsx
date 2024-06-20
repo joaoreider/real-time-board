@@ -1,7 +1,7 @@
 import React from 'react'
 import Sidebar from './_components/Sidebar/Sidebar'
 import OrgSidebar from './_components/Sidebar/OrgSidebar'
-import Navbar from './_components/Sidebar/Navbar'
+import Navbar from './_components/Navbar'
 
 interface LayoutProps {
   children: React.ReactNode
