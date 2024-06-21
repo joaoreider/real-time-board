@@ -1,8 +1,13 @@
-export default function DashboardPage() {
-  return (
-    <div className="flex flex-col gap-y-4">
-      <div>Dashboard Root</div>
+"use client"
+import { useOrganization } from "@clerk/nextjs";
+import EmptyOrg from "./_components/EmptyOrg";
 
+export default function DashboardPage() {
+  const { organization } = useOrganization();
+  return (
+    <div className="flex-1 h-[calc(100%-80px)] p-6">
+      {!organization ? <EmptyOrg /> : <h1>Dashboard</h1>}
     </div>
+
   );
 }
