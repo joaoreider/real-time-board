@@ -6,6 +6,7 @@ import { useApiMutation } from '@/hooks/use-api-mutation'
 import { useOrganization } from '@clerk/nextjs'
 import Image from 'next/image'
 import React from 'react'
+import { toast } from 'sonner'
 
 
 export default function EmptyBoards() {
@@ -17,6 +18,13 @@ export default function EmptyBoards() {
         mutate({
             orgId: organization.id,
             title: "Untitled"
+        })
+        .then((id) => {
+            toast.success("Board created successfully")
+            // Redirect to board/{id}
+        })
+        .catch((error) => {
+            toast.error("Failed to create board")
         })
     }
 
