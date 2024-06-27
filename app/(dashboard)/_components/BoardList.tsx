@@ -20,7 +20,6 @@ interface BoardListProps {
 export default function BoardList({orgId, query}: BoardListProps ) {
 
     const data = useQuery(api.boards.get, {orgId});
-
     if (data === undefined) {
         return (
             <div>
@@ -64,8 +63,8 @@ export default function BoardList({orgId, query}: BoardListProps ) {
             < NewBoardButton orgId={orgId}  />
             {data.map((board: any) => (
                 <BoardCard
-                    key={board.id}
-                    id={board.id}
+                    key={board._id}
+                    id={board._id}
                     title={board.title}
                     imageUrl={board.imageUrl}
                     authorId={board.authorId}
