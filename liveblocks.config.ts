@@ -18,9 +18,8 @@ declare global {
     UserMeta: {
       id: string;
       info: {
-        // Example properties, for useSelf, useUser, useOthers, etc.
-        // name: string;
-        // avatar: string;
+        name?: string;
+        picture?: string;
       };
     };
 
@@ -41,7 +40,7 @@ declare global {
     RoomInfo: {
       // Example, rooms with a title and url
       // title: string;
-      // url: string;
+       url: "/api/liveblocks-auth";
     };
   }
 }
