@@ -14,10 +14,13 @@
 # Preview
 
 # Features
+- Whiteboard from scratch
 - Layering functionality
 - Undo & Redo
 - Real-time collaboration
 - Auth, organizations and invites
+- Favoriting functionality
+
 
 # Installation
 
@@ -36,7 +39,7 @@ cd real-time-board
 ### Install dependencies
 
 ```bash
-pnpm install
+npm install
 ```
 
 ### Rename .env.template to .env
@@ -48,15 +51,16 @@ mv .env.template .env
 ### Run 
 
 ```bash
-pnpm run dev
+npm run dev
 ```
 
 # Technologies
-- Next14
-- React
-- Shadcn UI
-- Clerk
-- Convex
+- Next14: For the Web client
+- Shadcn UI: For design components
+- Clerk: For user management
+- Convex: For the backend
+- Liveblocks: For collaborative experience
+- Tailwind CSS: For styling.
 
 
 Each package/app is fully written in [TypeScript](https://www.typescriptlang.org/), ensuring type safety and code quality.
